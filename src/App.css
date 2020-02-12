@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.calendar{
+  background: #1F86B2;
+}
+
+.semaineplus{
+  display: none;
+}
+
+.show{
+  display: block;
+}
