@@ -1,20 +1,165 @@
-.App {
-  text-align: center;
+::-webkit-scrollbar {
+  width: 10px;
 }
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #1C1919;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*------ NAV ------ */
+
+nav{
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  transition: 0.6s;
+}
+nav h1{
+  width: 50%;
+  margin: 0 25px;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+}
+nav a{
+  color: #ffffff;
+  text-decoration: none;
+}
+nav a:hover{
+  color: grey;
+}
+
+/*------HEADER ------ */
 
 .App-header {
   min-height: 100vh;
-  background-color: #282c34;
+  background-image: url(./img/bk.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.App-header a{
+  background: #A83A3A;
+  border: none;
+  padding: 15px 20px;
+  color: #ffffff;
+  font-size: 24px;
+  -webkit-box-shadow: 7px 10px 21px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 10px 21px -10px rgba(0,0,0,0.75);
+  box-shadow: 7px 10px 21px -10px rgba(0,0,0,0.75);
+  margin-top: 60px;
+  text-decoration: none;
+}
+.App-header a:hover{
+  background-color: rgb(151, 54, 54);
+}
+@media screen and (max-width: 640px) {
+  .App-header img {
+    width: 100%;
+  }
+}
+/*------------ ABOUT ------------*/
+
+.section-about{
+  background-color: #1C1919;
+  color: #ffffff;
+  padding: 50px 0;
+}
+.section-about .container{
+  margin: 0 20%;
+}
+.section-about h2{
+  color: #A83A3A;
+  font-size: 36px;
+  margin: 0px 0px 25px 0px;
+}
+.section-about p{
+  font-size: 24px;
+}
+.section-about a{
+  color: #E0A800;
+}
+.section-about a:hover{
+  color: #1F86B2;
 }
 
+/*------------ FORM ------------*/
+
+.section-formulaire form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 20%;
+  padding: 50px 0;
+}
+.section-formulaire form .line{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.section-formulaire form .line:first-child{
+  margin-bottom: 50px;
+}
+.section-formulaire form .line label{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 27%;
+}
+.section-formulaire form label{
+  font-size: 18px;
+}
+.section-formulaire form label input{
+  border: none;
+  border-bottom: solid 1px #1C1919;
+  margin-top: 10px;
+}
+.section-formulaire form label input:focus{
+  outline: none !important;
+}
+
+.section-formulaire .calcul{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+  background-color: #1C1919;
+  color: #ffffff;
+}
+.section-formulaire .conditions{
+  background-color: #ffffff;
+  color: #A83A3A;
+}
+.section-formulaire .calcul h4{
+  margin: 0 0 50px 0;
+  font-size: 24px;
+}
+.section-formulaire .conditions h4{
+  margin: 0;
+}
 .calendar{
-  background: #1F86B2;
+  margin: 0 20%;
 }
 
+
+/*-------------------------------*/
 .semaineplus{
   display: none;
 }
@@ -22,3 +167,33 @@
 .show{
   display: block;
 }
+
+.box-type1{
+  background-color: #1F86B2;
+}
+.box-type2{
+  background-color: #E0A800;
+}
+
+.box{
+  width: 33.33333333%;
+}
+.row-box{
+  display: flex;
+  flex-flow: wrap;
+}
+/*-------------------------------*/
+
+/* --------- FOOTER --------- */
+footer{
+  background: #000000;
+  color: #ffffff;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+
+

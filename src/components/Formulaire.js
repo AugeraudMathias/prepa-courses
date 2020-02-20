@@ -20,8 +20,7 @@ export default class Formulaire extends React.Component {
 
     render() {
         return (
-            <section className="body-formulaire">
-                <h2>Formulaire</h2>
+            <section className="section-formulaire" id="form">
                 <Form 
                     parentCallback={this.callbackFunction}
                 />
